@@ -28,8 +28,9 @@
     "rimraf": "^2.6.2",
     "ts-md5": "1.2.2",
     "tslib": "^1.9.3",
-    "@cypress/releaser": "0.2.2"
-  },
+    "@cypress/releaser": "0.2.2",
+    "cypress": "3.1.1"
+      },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
     "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
@@ -37,12 +38,15 @@
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
+    "test": "npm start & cypress run",
     "eject": "react-scripts eject",
     "cy:verify": "cypress verify",
     "cy:version": "cypress version",
     "cy:run": "cypress run",
     "cy:run:record": "cypress run --record",
-    "cy:open": "cypress open"
+    "cy:open": "cypress open",
+    "local:open": "start-test 8080 cy:open",
+    "local:run": "start-test 8080 cy:run",
+    "local:run:record": "start-test 8080 cy:run:record"
   }
 }
