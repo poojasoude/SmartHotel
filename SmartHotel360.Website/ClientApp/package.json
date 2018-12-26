@@ -27,7 +27,8 @@
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.2",
     "ts-md5": "1.2.2",
-    "tslib": "^1.9.3"
+    "tslib": "^1.9.3",
+    "@cypress/releaser": "0.2.2"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
