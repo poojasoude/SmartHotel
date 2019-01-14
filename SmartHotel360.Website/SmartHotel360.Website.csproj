@@ -9,7 +9,8 @@
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
     <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
     <UserSecretsId>09a9605a-7eff-4e39-b788-27b251df5661</UserSecretsId>
-	 <ProjectGuid>{62DDB45C-9BE8-4C91-BDE3-7D6EECE027A7}</ProjectGuid>
+	 <ProjectGuid>{62DDB45C-9BE8-4C91-BDE3-7D6EECE027A7}</ProjectGuid>\
+   <AppxSymbolPackageEnabled>false</AppxSymbolPackageEnabled>
   </PropertyGroup>
 	
   <ItemGroup>
