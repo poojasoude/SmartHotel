@@ -1,0 +1,1 @@
+cy.get('.article').find('footer')
