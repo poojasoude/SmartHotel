@@ -14,7 +14,8 @@ describe('SmartHotel logo', function() {
   });
   
   it('Find the first li descendent within a ul', function() {
-     cy.get('ul li:first').should('have.class', 'is-active')
+    cy.get('sh-search-group--button').eq(8).should('is-disabled');
+ 
    });
 });
 
