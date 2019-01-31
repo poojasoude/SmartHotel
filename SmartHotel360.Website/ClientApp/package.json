@@ -43,7 +43,7 @@
     "cy:verify": "cypress verify",
     "cy:version": "cypress version",
     "cy:run": "cypress run",
-    "cy:run:record": "cypress run --record",
+    "cy:run:record": "cypress run --record --key f4466038-70c2-4688-9ed9-106bf013cd73",
     "cy:open": "cypress open",
     "local:open": "start-test 8080 cy:open",
     "local:run": "start-test 8080 cy:run",
