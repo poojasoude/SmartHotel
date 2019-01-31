@@ -8,14 +8,5 @@ describe('SmartHotel home page', function() {
   });
 });
 
-describe('SmartHotel logo', function() {
-  beforeEach(function() {
-    cy.visit('https://smarthotel360demo.azurewebsites.net/');
-  });
-  
-  it('Find the first li descendent within a ul', function() {
-    cy.get('sh-search-group--button').should('is-disabled');
- 
-   });
-});
+
 
