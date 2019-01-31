@@ -6,6 +6,6 @@ describe('SmartHotel footer ', function() {
   });
   
   it('contains footer', function() {
-   cy.get('.sh-footer').find('Terms & Conditions')
+   cy.get('.sh-footer').find('li').contain('Terms & Conditions');
   });
 });
