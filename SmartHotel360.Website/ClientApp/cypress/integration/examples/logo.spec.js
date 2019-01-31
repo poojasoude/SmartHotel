@@ -13,8 +13,8 @@ describe('SmartHotel logo', function() {
     cy.visit('https://smarthotel360demo.azurewebsites.net/');
   });
   
-  it('has a visible smarthotel logo', function() {
-     cy.get('.sh-nav_menu-logo is-home').should('be.visible');
+  it('Find the first li descendent within a ul', function() {
+     cy.get('ul li:first').should('have.class', 'is-active')
    });
 });
 
