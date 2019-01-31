@@ -5,5 +5,6 @@ describe('SmartHotel home page', function() {
   
   it('contains "SmartHotel360" in the title', function() {
      cy.contains('Smart Room');
+     cy.contains('Conference Room');
   });
 });
